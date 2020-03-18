@@ -7,7 +7,7 @@
 Ce cours vous apprendra a fabriquer un logiciel.
 Afin de rester simple, ce cours prendra des raccourcis.
 
-Si certaines instructions paraissent obscures il ne faut pas rester bloquer dessus et essayer d'avancer quand même.
+Si certaines instructions paraissent obscures il ne faut pas rester bloqué dessus et essayer d'avancer quand même.
 
 ### leçon 1 -- installation
 
