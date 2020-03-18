@@ -1,0 +1,5 @@
+git pull
+git branch lecon-1
+git add *
+git commit -m "Leçon 1"
+git checkout lecon-2
