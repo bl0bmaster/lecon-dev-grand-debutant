@@ -68,6 +68,7 @@ Voici les commandes que nous allons utiliser :
  * cd
  * mkdir
  * git
+ * bash
 
 Certaines de ces commandes s'utilisent telles quelles, d'autres on besoin d'informations supplémentaires. On appelle ces informations des paramètres.
 
@@ -118,6 +119,10 @@ Vous pouvez aussi taper la commande `ls` pour voir le contenu de ce répertoire.
 Cela devrait afficher
 
     img  REAMDE.md  suivant
+    
+Vous venez d'installer **votre** environnement pour les leçons.
+
+Pour passer à la leçon suivante, il faut taper la commande `bash suivant`. (n'oubliez pas la `touche Entrée`).
 
 ### leçon 1 -- fin de la leçon
 
