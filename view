@@ -1,0 +1,33 @@
+#!/bin/bash
+
+echo '
+<html><head>
+<script>
+let getIt = null ;
+getIt = function () {
+    if ( window.self !== window.top ){
+        let iframe =  document.getElementById("iframe");
+        document.querySelector("body").innerHTML = iframe.contentDocument.querySelector("body").innerHTML;
+        setTimeout( () => {
+        console.log(    document.documentElement );
+            let iframe =  document.getElementById("iframe");
+            iframe.src = iframe.src;
+            getIt();
+        }, 1000);
+        
+    }
+};
+
+window.addEventListener("load", getIt );
+
+</script></head><body>'  >readme.html
+pandoc -f markdown -t html  README.md   >> readme.html
+
+echo '
+
+
+<iframe id="iframe" src="readme.html" style="
+width : 1px ; height : 1px ; position : absolute; top : -9999px ;
+"></iframe>
+</body></html>
+' >> readme.html

@@ -1,0 +1,120 @@
+
+<html><head>
+<script>
+let getIt = null ;
+getIt = function () {
+    if ( window.self !== window.top ){
+        let iframe =  document.getElementById("iframe");
+        document.querySelector("body").innerHTML = iframe.contentDocument.querySelector("body").innerHTML;
+        setTimeout( () => {
+        console.log(    document.documentElement );
+            let iframe =  document.getElementById("iframe");
+            iframe.src = iframe.src;
+            getIt();
+        }, 1000);
+        
+    }
+};
+
+window.addEventListener("load", getIt );
+
+</script></head><body>
+<h1 id="cours-de-programmation">Cours de programmation</h1>
+<h2 id="à-ceux-qui-veulent-suivrent-le-cours.">À ceux qui veulent suivrent le cours.</h2>
+<h3 id="à-propos">À propos</h3>
+<p>Ce cours vous apprendra a fabriquer un logiciel. Afin de rester simple, ce cours prendra des raccourcis.</p>
+<p>Si certaines instructions paraissent obscures il ne faut pas rester bloqué dessus et essayer d'avancer quand même.</p>
+<h3 id="leçon-1----installation">leçon 1 -- installation</h3>
+<h4 id="pré-requis">Pré-requis</h4>
+<ul>
+<li>Savoir lire.</li>
+<li>Savoir copier/coller</li>
+<li>Connaitre la <code>touche Entrée</code></li>
+</ul>
+<h4 id="objectif">Objectif</h4>
+<p>Premier objectif installer ce cours sur son ordinateur.</p>
+<p>Pour atteindre cet objectif, et passer au suivant, vous allez apprendre à connaitre 3 outils :</p>
+<ul>
+<li>la console</li>
+<li>le gestionnaire de sources</li>
+<li>le shell</li>
+</ul>
+<h4 id="la-console">La console</h4>
+<p>La console est un outil pour communiquer avec l'ordinateur. On y tape des commandes et l'ordinateur les exécutes.</p>
+<p>Une fois les commandes exécutées par l'ordinatgetIteur, celui-ci affiche, dans la console, le résultat de ces commandes.</p>
+<p>La console permet d'échanger avec l'ordinateur comme si on parlait sa langue et qu'on lui écrivait. D'une certaine façon.</p>
+<p>La console que nous utiliserons s'appelle <code>konsole</code>. C'est pas très original comme nom mais on s'en fiche en vrai.</p>
+<p>Pour ouvrir <code>konsole</code> il faut utiliser la <code>touche menu</code> du clavier.</p>
+<div class="figure">
+<img src="./img/touche_menu.png" alt="touche menu" />
+<p class="caption">touche menu</p>
+</div>
+<p>Puis il faut taper <code>konsole</code> ce qui recherchera l'application dans le menu.</p>
+<div class="figure">
+<img src="./img/recherche_konsole.png" alt="konsole" />
+<p class="caption">konsole</p>
+</div>
+<p>Après cela il suffit de cliquer sur l'icône de <code>Konsole</code> pour le lancer (ou juste d'appuyer sur la <code>touche Entrée</code>).</p>
+<p>La fenêtre de l'application <code>Konsole</code> s'ouvre.</p>
+<div class="figure">
+<img src="./img/konsole_vide.png" alt="konsole" />
+<p class="caption">konsole</p>
+</div>
+<p>Pour entrer dedans il suffit de cliquer au milieu.</p>
+<p>Une fois dedans on peut taper des commandes.</p>
+<h4 id="les-commandes">Les commandes</h4>
+<p>Les commandes sont des ordres que l'on donne à l'ordinateur.</p>
+<p>Voici les commandes que nous allons utiliser :</p>
+<ul>
+<li>ls</li>
+<li>pwd</li>
+<li>cd</li>
+<li>mkdir</li>
+<li>git</li>
+<li>bash</li>
+</ul>
+<p>Certaines de ces commandes s'utilisent telles quelles, d'autres on besoin d'informations supplémentaires. On appelle ces informations des paramètres.</p>
+<p>Par exemple vous pouvez taper : <code>ls</code> puis la <code>touche Entrée</code>.</p>
+<p>Cela affiche la liste des fichiers présents dans le répertoire courant.</p>
+<h4 id="les-répertoires">Les répertoires</h4>
+<p>Nous verrons, dans le détail, ce qu'est un répertoire plus tard. Pour l'instant il suffit de savoir que c'est un emplacement.</p>
+<p>Quand on ouvre <code>Konsole</code> le répertoire de départ est appelé <code>home</code>.</p>
+<p>La commande <code>cd</code> permet de changer de répertoire. Elle prend en paramètre le répertoire de destination. Si elle est utilisée sans paramètre elle permet de se déplacer dans le <code>home</code>.</p>
+<p>La commande <code>mkdir</code> permet de créer un répertoire. Nous allons l'utiliser pour créer le répertoire de nos leçons.</p>
+<p>Dans la <code>Konsole</code> tapez <code>mkdir lecons</code> (sans la céddille) puis appuyez la <code>touche Entrée</code>. Vous venez de créer le répertoire <code>lecons</code>.</p>
+<p>En tapant à nouveau <code>ls</code> puis la <code>touche Entrée</code> vous le voyez apparitre dans la liste.</p>
+<p>En tapant <code>cd lecons</code> puis la <code>touche Entrée</code> vous vous deplacez dans le répertoire <code>lecons</code>.</p>
+<p>En tapant encre <code>ls</code> puis la <code>touche Entrée</code> vous voyez la liste des fichiers dans <code>lecons</code>, cela ne devrait donc rien afficher car <code>lecons</code> est vide.</p>
+<p>C'est ici que nous allons installer l'ensemble des leçons grâce à la commande <code>git</code></p>
+<h4 id="git">Git</h4>
+<p>Git est un outil pour développer. C'est un outil complexe qui est utiliser pour plein de choses. Nous allons l'utiliser sans chercher tout comprendre au début.</p>
+<p>Il permet, entre autre, de :</p>
+<ul>
+<li>télécharger les fichiers des logiciels en cours de fabrication</li>
+<li>sauvegarder les logiciels en cours de fabrication</li>
+<li>faciliter le travil à plusieurs</li>
+<li>pleins d'autres choses essentielles à la fabrication de logiciels complexes</li>
+</ul>
+<p>Pour installer les leçons il suffit de taper la commande : <code>git clone git@github.com:bl0bmaster/lecon-dev-grand-debutant.git</code></p>
+<p>Cette commande fait ce que l'on appel &quot;cloner un dépôt&quot;. Le &quot;dépôt&quot; c'est la version en ligne des leçons. Le &quot;clone&quot; c'est la version dans votre ordinateur des leçons.</p>
+<p>Pour aller dans le répertoire du clone il suffit de taper la commande <code>cd lecon-dev-grand-debutant</code>. (n'oubliez pas la <code>touche Entrée</code>). Vous pouvez aussi taper la commande <code>ls</code> pour voir le contenu de ce répertoire. Cela devrait afficher</p>
+<pre><code>img  REAMDE.md  suivant</code></pre>
+<p>Vous venez d'installer <strong>votre</strong> environnement pour les leçons.</p>
+<p>Pour passer à la leçon suivante, il faut taper la commande <code>bash suivant</code>. (n'oubliez pas la <code>touche Entrée</code>).</p>
+<h3 id="leçon-1----fin-de-la-leçon">leçon 1 -- fin de la leçon</h3>
+<p>Pour passer à la leçon suivante il faut dans le répertoire du clone</p>
+<p>Il n'est pas nécessaire de lire le chapitre suivant, cette leçon est terminée.</p>
+<h2 id="à-ceux-qui-veulent-le-mettre-en-place">À ceux qui veulent le mettre en place</h2>
+<h3 id="cible-du-cours">Cible du cours</h3>
+<p>Ce cours est destiné à de grand débutant, de tout âge, sachant lire. On y apprend à faire une application web.</p>
+<p>La partie serveur est en Python3. Le front est en Vue.js. Et oui c'est ambitieux.</p>
+<h3 id="pré-requis-1">Pré-requis</h3>
+<p>Il faut être sous Linux/KDE et avoir firefox, bash, kate, git, nvm, python3 et pip3 déjà installés sur la machine.</p>
+
+
+
+<iframe id="iframe" src="readme.html" style="
+width : 1px ; height : 1px ; position : absolute; top : -9999px ;
+"></iframe>
+</body></html>
+

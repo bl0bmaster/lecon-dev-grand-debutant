@@ -1,0 +1,78 @@
+\section{Cours de programmation}\label{cours-de-programmation}
+
+\subsection{À ceux qui veulent suivrent le
+cours.}\label{uxe0-ceux-qui-veulent-suivrent-le-cours.}
+
+\subsubsection{À propos}\label{uxe0-propos}
+
+Ce cours vous apprendra a fabriquer un logiciel. Afin de rester simple,
+ce cours prendra des raccourcis.
+
+Si certaines instructions paraissent obscures
+
+\subsubsection{leçon 1 -- installation}\label{leuxe7on-1-installation}
+
+\paragraph{Objectif}\label{objectif}
+
+Premier objectif installer ce cours sur son ordinateur.
+
+Pour atteindre cet objectif, et passer au suivant, il faut connaitre 3
+outils :
+
+\begin{itemize}
+\tightlist
+\item
+  la console
+\item
+  le gestionnaire de sources
+\item
+  le shell
+\end{itemize}
+
+\paragraph{La console}\label{la-console}
+
+La console est un outil pour communiquer avec l'ordinateur. On y tape
+des commandes et l'ordinateur les exécutes.
+
+Une fois les commandes exécutées par l'ordinateur, celui-ci affiche,
+dans la console, le résultat de ces commandes.
+
+La console permet d'échanger avec l'ordinateur comme si on parlait sa
+langue et qu'on lui écrivait. D'une certaine façon.
+
+La console que nous utiliserons s'appelle \texttt{konsole}. C'est pas
+très original comme nom mais on s'en fiche en vrai.
+
+Pour ouvrir \texttt{konsole} il faut utiliser la \texttt{touche\ menu}
+du clavier. \includegraphics{./img/touche_menu.png}
+
+Puis il faut taper \texttt{konsole} ce qui recherchera l'application
+dans le menu.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics{./img/recherche_konsole.png}
+\caption{konsole}
+\end{figure}
+
+Après cela il suffit de cliquer sur l'icône de \texttt{Konsole} pour le
+lancer.
+
+Il n'est pas nécessaire de lire le chapitre suivant, cette leçon est
+terminée.
+
+\subsection{À ceux qui veulent le mettre en
+place}\label{uxe0-ceux-qui-veulent-le-mettre-en-place}
+
+\subsubsection{Cible du cours}\label{cible-du-cours}
+
+Ce cours est destiné à de grand débutant, de tout âge, sachant lire. On
+y apprend à faire une application web.
+
+La partie serveur est en Python3. Le front est en Vue.js. Et oui c'est
+ambitieux.
+
+\subsubsection{Pré-requis}\label{pruxe9-requis}
+
+Il faut être sous Linux/KDE et avoir firefox, bash, kate, git, nvm,
+python3 et pip3 déjà installés sur la machine.
