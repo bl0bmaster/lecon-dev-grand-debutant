@@ -22,7 +22,7 @@ Si certaines instructions paraissent obscures il ne faut pas rester bloqué dess
 
 Premier objectif installer ce cours sur son ordinateur.
 
-Pour atteindre cet objectif, et passer au suivant, il faut connaitre 3 outils :
+Pour atteindre cet objectif, et passer au suivant, vous allez apprendre à connaitre 3 outils :
  
  * la console
  * le gestionnaire de sources
@@ -33,7 +33,7 @@ Pour atteindre cet objectif, et passer au suivant, il faut connaitre 3 outils :
 La console est un outil pour communiquer avec l'ordinateur.
 On y tape des commandes et l'ordinateur les exécutes.
 
-Une fois les commandes exécutées par l'ordinateur, celui-ci affiche, dans la console, le résultat de ces commandes.
+Une fois les commandes exécutées par l'ordinatgetIteur, celui-ci affiche, dans la console, le résultat de ces commandes.
 
 La console permet d'échanger avec l'ordinateur comme si on parlait sa langue et qu'on lui écrivait. D'une certaine façon.
 
@@ -83,14 +83,14 @@ Nous verrons, dans le détail, ce qu'est un répertoire plus tard. Pour l'instan
 Quand on ouvre `Konsole` le répertoire de départ est appelé `home`.
 
 La commande `cd` permet de changer de répertoire. Elle prend en paramètre le répertoire de destination.
-Si elle est utilisée sans paramètre elle permet de se déplacer dans le `home`.
+Si elle est utilisée sans paramètre elle permet de se déplacer depuis n'importe ou dans le `home`.
 
 La commande `mkdir` permet de créer un répertoire. Nous allons l'utiliser pour créer le répertoire de nos leçons.
 
 Dans la `Konsole` tapez `mkdir lecons` (sans la céddille) puis appuyez la `touche Entrée`.
 Vous venez de créer le répertoire `lecons`.
 
-En tapant à nouveau `ls` puis la `touche Entrée` vous le voyez apparitre dans la liste.
+En tapant à nouveau `ls` puis la `touche Entrée` vous le voyez apparaître dans la liste.
 
 En tapant `cd lecons` puis la `touche Entrée` vous vous deplacez dans le répertoire `lecons`.
 
@@ -100,7 +100,7 @@ C'est ici que nous allons installer l'ensemble des leçons grâce à la commande
 
 #### Git
 
-Git est un outil pour développer. C'est un outil complexe qui est utiliser pour plein de choses. Nous allons l'utiliser sans chercher tout comprendre au début.
+Git est un outil pour développer. C'est un outil complexe qui est utilisé pour plein de choses. Nous allons l'utiliser sans chercher à tout comprendre au début.
 
 Il permet, entre autre, de :
 
@@ -109,10 +109,10 @@ Il permet, entre autre, de :
  * faciliter le travil à plusieurs
  * pleins d'autres choses essentielles à la fabrication de logiciels complexes
 
-Pour installer les leçons il suffit de taper la commande :
+Pour installer les leçons il suffit de taper (copier/coller c'est mieux) la commande :
 `git clone git@github.com:bl0bmaster/lecon-dev-grand-debutant.git`
 
-Cette commande fait ce que l'on appel "cloner un dépôt". Le "dépôt" c'est la version en ligne des leçons. Le "clone" c'est la version dans votre ordinateur des leçons.
+Cette commande fait ce que l'on appel "cloner un dépôt". Le "dépôt" c'est la version sur internet des leçons. Le "clone" c'est la version dans votre ordinateur des leçons.
 
 Pour aller dans le répertoire du clone il suffit de taper la commande `cd lecon-dev-grand-debutant`. (n'oubliez pas la `touche Entrée`).
 Vous pouvez aussi taper la commande `ls` pour voir le contenu de ce répertoire.
@@ -125,8 +125,6 @@ Vous venez d'installer **votre** environnement pour les leçons.
 Pour passer à la leçon suivante, il faut taper la commande `bash suivant`. (n'oubliez pas la `touche Entrée`).
 
 ### leçon 1 -- fin de la leçon
-
-Pour passer à la leçon suivante il faut dans le répertoire du clone
 
 Il n'est pas nécessaire de lire le chapitre suivant, cette leçon est terminée.
 
