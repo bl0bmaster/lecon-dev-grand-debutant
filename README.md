@@ -128,7 +128,7 @@ Pour passer à la leçon suivante, il faut taper la commande `bash suivant`. (n'
 
 Il n'est pas nécessaire de lire le chapitre suivant, cette leçon est terminée.
 
-Vous pouvez passer à la leçon 2 en cliquant [leçon2](./tree/lecon-2)
+Vous pouvez passer à la leçon 2 en cliquant [leçon2](../lecon-2)
 
 ## À ceux qui veulent le mettre en place 
 
