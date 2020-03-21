@@ -31,9 +31,9 @@ Pour atteindre cet objectif, et passer au suivant, vous allez apprendre à conna
 #### La console
 
 La console est un outil pour communiquer avec l'ordinateur.
-On y tape des commandes et l'ordinateur les exécutes.
+On y tape des commandes et l'ordinateur les réalises.
 
-Une fois les commandes exécutées par l'ordinatgetIteur, celui-ci affiche, dans la console, le résultat de ces commandes.
+Une fois les commandes exécutées par l'ordinateur, celui-ci affiche, dans la console, le résultat de ces commandes.
 
 La console permet d'échanger avec l'ordinateur comme si on parlait sa langue et qu'on lui écrivait. D'une certaine façon.
 
